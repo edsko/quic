@@ -1,0 +1,41 @@
+cabal-version: 3.0
+name:          quinn-interop
+version:       0.1.0
+license:       BSD-3-Clause
+author:        Edsko de Vries
+maintainer:    edsko@well-typed.com
+build-type:    Simple
+
+common lang
+  ghc-options:
+      -Wall
+      -threaded
+  build-depends:
+      base >= 4.12
+  default-language:
+      Haskell2010
+  default-extensions:
+      MultiWayIf
+
+executable simple_server
+  import:
+      lang
+  hs-source-dirs:
+      server
+  main-is:
+      Main.hs
+  build-depends:
+    , quic
+    , tls
+
+executable simple_bi_client
+  import:
+      lang
+  hs-source-dirs:
+      simple_bi_client
+  main-is:
+      Main.hs
+  build-depends:
+    , async
+    , quic
+    , tls

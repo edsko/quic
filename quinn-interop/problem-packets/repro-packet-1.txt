@@ -1,0 +1,264 @@
+Frame 1: 1242 bytes on wire (9936 bits), 1242 bytes captured (9936 bits) on interface lo, id 0
+    Interface id: 0 (lo)
+        Interface name: lo
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Jan  5, 2023 14:37:54.632198678 CET
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1672925874.632198678 seconds
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 1
+    Frame Length: 1242 bytes (9936 bits)
+    Capture Length: 1242 bytes (9936 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:quic:tls]
+    [Coloring Rule Name: UDP]
+    [Coloring Rule String: udp]
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Destination: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        Address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x02 (DSCP: CS0, ECN: ECT(0))
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..10 = Explicit Congestion Notification: ECN-Capable Transport codepoint '10' (2)
+    Total Length: 1228
+    Identification: 0x0000 (0)
+    Flags: 0x40, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: UDP (17)
+    Header Checksum: 0x381d [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 127.0.0.1
+    Destination Address: 127.0.0.1
+User Datagram Protocol, Src Port: 5001, Dst Port: 5000
+    Source Port: 5001
+    Destination Port: 5000
+    Length: 1208
+    Checksum: 0x02cc [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+    [Timestamps]
+        [Time since first frame: 0.000000000 seconds]
+        [Time since previous frame: 0.000000000 seconds]
+    UDP payload (1200 bytes)
+QUIC IETF
+    QUIC Connection information
+        [Connection Number: 0]
+    [Packet Length: 1200]
+    1... .... = Header Form: Long Header (1)
+    .1.. .... = Fixed Bit: True
+    ..00 .... = Packet Type: Initial (0)
+    .... 00.. = Reserved: 0
+    .... ..00 = Packet Number Length: 1 bytes (0)
+    Version: 1 (0x00000001)
+    Destination Connection ID Length: 20
+    Destination Connection ID: e3501f0dc4843874c9c1acbf57046195df192ec0
+    Source Connection ID Length: 8
+    Source Connection ID: 390a53d6125167a5
+    Token Length: 0
+    Length: 1162
+    Packet Number: 0
+    Payload: b303e78ad9c54317f70fedc1022ff46d7fa60cf9355e56930f754932378ecb76f8d1d84e…
+    CRYPTO
+        Frame Type: CRYPTO (0x0000000000000006)
+        Offset: 0
+        Length: 274
+        Crypto Data
+        TLSv1.3 Record Layer: Handshake Protocol: Client Hello
+            Handshake Protocol: Client Hello
+                Handshake Type: Client Hello (1)
+                Length: 270
+                Version: TLS 1.2 (0x0303)
+                Random: 458ae8a72a387cd9855e30f776f340007b8baa08ec6263c2347338f2daab3f06
+                Session ID Length: 0
+                Cipher Suites Length: 20
+                Cipher Suites (10 suites)
+                    Cipher Suite: TLS_AES_256_GCM_SHA384 (0x1302)
+                    Cipher Suite: TLS_AES_128_GCM_SHA256 (0x1301)
+                    Cipher Suite: TLS_CHACHA20_POLY1305_SHA256 (0x1303)
+                    Cipher Suite: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 (0xc02c)
+                    Cipher Suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 (0xc02b)
+                    Cipher Suite: TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 (0xcca9)
+                    Cipher Suite: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (0xc030)
+                    Cipher Suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (0xc02f)
+                    Cipher Suite: TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (0xcca8)
+                    Cipher Suite: TLS_EMPTY_RENEGOTIATION_INFO_SCSV (0x00ff)
+                Compression Methods Length: 1
+                Compression Methods (1 method)
+                    Compression Method: null (0)
+                Extensions Length: 209
+                Extension: supported_versions (len=3)
+                    Type: supported_versions (43)
+                    Length: 3
+                    Supported Versions length: 2
+                    Supported Version: TLS 1.3 (0x0304)
+                Extension: ec_point_formats (len=2)
+                    Type: ec_point_formats (11)
+                    Length: 2
+                    EC point formats Length: 1
+                    Elliptic curves point formats (1)
+                        EC point format: uncompressed (0)
+                Extension: supported_groups (len=8)
+                    Type: supported_groups (10)
+                    Length: 8
+                    Supported Groups List Length: 6
+                    Supported Groups (3 groups)
+                        Supported Group: x25519 (0x001d)
+                        Supported Group: secp256r1 (0x0017)
+                        Supported Group: secp384r1 (0x0018)
+                Extension: signature_algorithms (len=20)
+                    Type: signature_algorithms (13)
+                    Length: 20
+                    Signature Hash Algorithms Length: 18
+                    Signature Hash Algorithms (9 algorithms)
+                        Signature Algorithm: ecdsa_secp384r1_sha384 (0x0503)
+                            Signature Hash Algorithm Hash: SHA384 (5)
+                            Signature Hash Algorithm Signature: ECDSA (3)
+                        Signature Algorithm: ecdsa_secp256r1_sha256 (0x0403)
+                            Signature Hash Algorithm Hash: SHA256 (4)
+                            Signature Hash Algorithm Signature: ECDSA (3)
+                        Signature Algorithm: ed25519 (0x0807)
+                            Signature Hash Algorithm Hash: Unknown (8)
+                            Signature Hash Algorithm Signature: Unknown (7)
+                        Signature Algorithm: rsa_pss_rsae_sha512 (0x0806)
+                            Signature Hash Algorithm Hash: Unknown (8)
+                            Signature Hash Algorithm Signature: Unknown (6)
+                        Signature Algorithm: rsa_pss_rsae_sha384 (0x0805)
+                            Signature Hash Algorithm Hash: Unknown (8)
+                            Signature Hash Algorithm Signature: Unknown (5)
+                        Signature Algorithm: rsa_pss_rsae_sha256 (0x0804)
+                            Signature Hash Algorithm Hash: Unknown (8)
+                            Signature Hash Algorithm Signature: SM2 (4)
+                        Signature Algorithm: rsa_pkcs1_sha512 (0x0601)
+                            Signature Hash Algorithm Hash: SHA512 (6)
+                            Signature Hash Algorithm Signature: RSA (1)
+                        Signature Algorithm: rsa_pkcs1_sha384 (0x0501)
+                            Signature Hash Algorithm Hash: SHA384 (5)
+                            Signature Hash Algorithm Signature: RSA (1)
+                        Signature Algorithm: rsa_pkcs1_sha256 (0x0401)
+                            Signature Hash Algorithm Hash: SHA256 (4)
+                            Signature Hash Algorithm Signature: RSA (1)
+                Extension: extended_master_secret (len=0)
+                    Type: extended_master_secret (23)
+                    Length: 0
+                Extension: status_request (len=5)
+                    Type: status_request (5)
+                    Length: 5
+                    Certificate Status Type: OCSP (1)
+                    Responder ID list Length: 0
+                    Request Extensions Length: 0
+                Extension: server_name (len=14)
+                    Type: server_name (0)
+                    Length: 14
+                    Server Name Indication extension
+                        Server Name list length: 12
+                        Server Name Type: host_name (0)
+                        Server Name length: 9
+                        Server Name: localhost
+                Extension: signed_certificate_timestamp (len=0)
+                    Type: signed_certificate_timestamp (18)
+                    Length: 0
+                Extension: key_share (len=38)
+                    Type: key_share (51)
+                    Length: 38
+                    Key Share extension
+                        Client Key Share Length: 36
+                        Key Share Entry: Group: x25519, Key Exchange length: 32
+                            Group: x25519 (29)
+                            Key Exchange Length: 32
+                            Key Exchange: 916f554b7d751aec1ec0403318e728cc5a721e6b01f10ea679db61aada420b41
+                Extension: psk_key_exchange_modes (len=2)
+                    Type: psk_key_exchange_modes (45)
+                    Length: 2
+                    PSK Key Exchange Modes Length: 1
+                    PSK Key Exchange Mode: PSK with (EC)DHE key establishment (psk_dhe_ke) (1)
+                Extension: quic_transport_parameters (len=69)
+                    Type: quic_transport_parameters (57)
+                    Length: 69
+                    Parameter: max_idle_timeout (len=2) 10000 ms
+                        Type: max_idle_timeout (0x01)
+                        Length: 2
+                        Value: 6710
+                        max_idle_timeout: 10000
+                    Parameter: max_udp_payload_size (len=2) 1480
+                        Type: max_udp_payload_size (0x03)
+                        Length: 2
+                        Value: 45c8
+                        max_udp_payload_size: 1480
+                    Parameter: initial_max_data (len=8) 4611686018427387903
+                        Type: initial_max_data (0x04)
+                        Length: 8
+                        Value: ffffffffffffffff
+                        initial_max_data: 4611686018427387903
+                    Parameter: initial_max_stream_data_bidi_local (len=4) 1250000
+                        Type: initial_max_stream_data_bidi_local (0x05)
+                        Length: 4
+                        Value: 801312d0
+                        initial_max_stream_data_bidi_local: 1250000
+                    Parameter: initial_max_stream_data_bidi_remote (len=4) 1250000
+                        Type: initial_max_stream_data_bidi_remote (0x06)
+                        Length: 4
+                        Value: 801312d0
+                        initial_max_stream_data_bidi_remote: 1250000
+                    Parameter: initial_max_stream_data_uni (len=4) 1250000
+                        Type: initial_max_stream_data_uni (0x07)
+                        Length: 4
+                        Value: 801312d0
+                        initial_max_stream_data_uni: 1250000
+                    Parameter: initial_max_streams_bidi (len=2) 100
+                        Type: initial_max_streams_bidi (0x08)
+                        Length: 2
+                        Value: 4064
+                        initial_max_streams_bidi: 100
+                    Parameter: initial_max_streams_uni (len=2) 100
+                        Type: initial_max_streams_uni (0x09)
+                        Length: 2
+                        Value: 4064
+                        initial_max_streams_uni: 100
+                    Parameter: active_connection_id_limit (len=1) 5
+                        Type: active_connection_id_limit (0x0e)
+                        Length: 1
+                        Value: 05
+                        Active Connection ID Limit: 5
+                    Parameter: GREASE (len=0)
+                        Type: GREASE (0xb6)
+                        Length: 0
+                        Value: <MISSING>
+                    Parameter: max_datagram_frame_size (len=4) 65535
+                        Type: max_datagram_frame_size (0x20)
+                        Length: 4
+                        Value: 8000ffff
+                        max_datagram_frame_size: 65535
+                    Parameter: initial_source_connection_id (len=8)
+                        Type: initial_source_connection_id (0x0f)
+                        Length: 8
+                        Value: 390a53d6125167a5
+                        Initial Source Connection ID: 390a53d6125167a5
+                    Parameter: grease_quic_bit (len=0)
+                        Type: grease_quic_bit (0x2ab2)
+                        Length: 0
+                        Value: <MISSING>
+                Extension: session_ticket (len=0)
+                    Type: session_ticket (35)
+                    Length: 0
+                    Data (0 bytes)
+                [JA3 Fullstring: 771,4866-4865-4867-49196-49195-52393-49200-49199-52392-255,43-11-10-13-23-5-0-18-51-45-57-35,29-23-24,0]
+                [JA3: 5d4425391fde77c4e0337e6c3c254ec9]
+    PADDING Length: 867
+        Frame Type: PADDING (0x0000000000000000)
+        [Padding Length: 867]
